@@ -36,6 +36,5 @@ public class CreatePurchaseOrderService {
         purchaseOrder.setPrice(orderRequestDto.getAmount());
         purchaseOrder.setOrderStatus(OrderStatus.ORDER_CREATED);
         return purchaseOrder;
-    }
-    
+    }    
 }
