@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: paymentProcessor
+      bindings:
+        paymentProcessor-in-0:
+          destination: order-event #consume topic from microservice order
+        paymentProcessor-out-0:
+          destination: payment-event #produce data to payment event
